@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Infix to Postfix</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+        <a href="/graphs.html">GRAPHS</a>
+    </div>
+    <br>
+    <div class="contact-container">
+        <!-- Hash Options -->
+        <h1>Hash Functions</h1>
+        <form action="/InPost.html" method="post">
+          <div class="ob-formstype-your-infix-notat">
+            <p>Input your infix notation here</p>
+                <input type="text" class="form-control" id="infix" name="infix" placeholder="Type your infix notation here" size="40" required>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <hr>
+        <p class="operands-precede-operators">
+          Your converted postfix expression is:
+        </p>
+        <p class="operands-precede-operators">
+          {% if result != None %}
+            {{ result }}
+          {% endif %}
+          {% if error and result != None %}
+              {{ error }}
+          {% endif %}
+          {% if result == None %}
+              no input data.
+          {% endif %}
+    </div>
+</body>
+</html>

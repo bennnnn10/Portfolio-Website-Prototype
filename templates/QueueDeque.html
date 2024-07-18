@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Queue-Dequeue</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+        
+    </div>
+    <br>
+    <div class="contact-container">
+        <!-- Hash Options -->
+        <h1>Queue-Deque</h1>
+        <form action="/QueueDeque.html" method="post" >
+          <label for="inputString" class="Anim" >  Enter a string:     </label>
+          <input type="text" id="inputString" name="inputString" placeholder="Type your data here" size="80">
+          <br>    
+          <input type="submit" id ="enqueue" name="enqueue" value="Queue"  class="btn">
+          <input type="submit" id ="dequeue" name="dequeue" value="Deque" class="btn">
+        </form>
+        <!-- Results Section -->
+        <hr>
+        <p>
+          {% if Enqueue %}
+          Queue List: {{ " -> ".join(Enqueue) }}
+          {% endif %}
+          {% if Dequeue %}
+          <br>
+          Dequeue: {{ Dequeue }}
+          {% endif %}
+        </p>
+</body>
+</html>

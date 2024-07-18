@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphs and Trees</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+    </div>
+    <br>
+
+    <div class="contact-container">
+        <h1>Find the Shortest Path</h1>
+        <hr>
+        <form action="/graphs.html" method="post">
+            <label for="startStation">Select Start Station:</label>
+            <select id="startStation" name="startStation">
+                {% for station in stations %}
+                    <option value="{{ station }}">{{ station }}</option>
+                {% endfor %}
+            </select>
+
+            <br>
+            <br>
+            <label for="endStation">Select End Station:</label>
+            <select id="endStation" name="endStation">
+                {% for station in stations %}
+                    <option value="{{ station }}">{{ station }}</option>
+                {% endfor %}
+            </select>
+
+            <br>
+            <br>
+            <input type="submit" value="Find Shortest Path">
+        </form>
+        <hr>
+        <h2>Results</h2>
+        {% if shortest_path %}
+            <p>Shortest path from {{ start_station }} to {{ end_station }}: {{ shortest_path }}</p>
+        {% else %}
+            <p>No path found from {{ start_station }} to {{ end_station }}</p>
+        {% endif %}
+        <hr>
+        <img src="static/css/public/LRT-MRT-ROUTES.jpg">
+    </div>
+</body>
+</html>

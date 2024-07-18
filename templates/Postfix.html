@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basic_style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="/">HOME</a>
+        <a href="/MemberPage.html">ABOUT</a>
+        <a href="/AppList.html">APP LISTS</a>
+        <a href="/MemberPage.html">CONTACT</a>
+    </div>
+    <br>
+    <div class="contact-container">
+        <h1>Infix to Postfix</h1>
+        <form action="/Postfix.html" method="post">
+          <div class="ob-formstype-your-infix-notat">
+            <p>Input your infix notation here</p>
+                <input type="text" class="form-control" id="infix" name="infix" placeholder="Type your infix notation here" size="40" required>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <hr>
+          <p>Your converted postfix expression is:</p>
+          <p>
+          {% if result != None %}
+            {{ result }}
+          {% endif %}
+          {% if error and result != None %}
+              {{ error }}
+          {% endif %}
+          {% if result == None %}
+              no input data.
+          {% endif %}
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="/static/css/global.css" />
+    <link rel="stylesheet" href="/static/css/AppList.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="applist">
+      <img class="layer-1-1" alt="" src="/static/css/public/layer-1-1@2x.png" />
+
+      <div class="apps">
+        <div class="searchalgo">
+          <b class="python-app">Python app</b>
+          <b class="results">Results</b>
+          <h1 class="search-algorithm">Search Algorithm</h1>
+          <div class="searching-algorithms-are">
+            Searching Algorithms are designed to check for an element or
+            retrieve an element from any data structure where it is stored. This
+            app measures searching speed of varying Search Algorithms.
+          </div>
+          <div class="searchalgo-child"></div>
+          <button class="button" id="button">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+          <b class="definition">Definition</b>
+        </div>
+        <div class="inpost">
+          <b class="python-app1">Python app</b>
+          <b class="definition1">Definition</b>
+          <h1 class="infix-to-postfix-container">
+            <p class="infix-to">Infix to</p>
+            <p class="infix-to">Postfix</p>
+          </h1>
+          <div class="searching-algorithms-are">
+            Transforming mathematical expressions from the familiar infix
+            notation to the efficient Postfix notation has never been easier!
+            Simplify the process of converting mathematical expressions for
+            improved readability and computational efficiency.
+          </div>
+          <div class="searchalgo-child"></div>
+          <button class="button1" id="button1">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+        </div>
+        <div class="queue-deque">
+          <b class="python-app1">Python app</b>
+          <h1 class="infix-to-postfix-container">Queue - Deque</h1>
+          <div class="meet-your-new">
+            Meet your new ally in efficient data handling - the Queue and Deque
+            Assistant app! Designed for seamless management of data structures,
+            this app is your go-to solution for mastering queues and dequeues
+            effortlessly.
+          </div>
+          <div class="searchalgo-child"></div>
+          <button class="button" id="button2">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+          <b class="definition1">Definition</b>
+          <b class="definition1">Definition</b>
+        </div>
+        <div class="hashfunc" id="hashFuncContainer">
+          <b class="python-app1">Python app</b>
+          <h1 class="infix-to-postfix-container">Hash Function</h1>
+          <div class="meet-your-new">
+            Unlock the magic of efficient data storage and retrieval with our
+            Hash Function Wizard – your ultimate companion for harnessing the
+            power of hash functions. This app is meticulously crafted to
+            simplify the process of hashing, making data organization and access
+            a breeze.
+          </div>
+          <div class="searchalgo-child"></div>
+          <button class="button" id="button3">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+          <b class="definition1">Definition</b>
+        </div>
+        <div class="graphstrees">
+          <img class="image-15-icon" alt="" src="/static/css/public/image-15@2x.png" />
+
+          <div class="graphstrees-child"></div>
+          <b class="python-app1">Python app</b>
+          <h1 class="infix-to-postfix-container">Graphs and Trees</h1>
+          <div class="explore-and-sort">
+            Explore and sort data structures effortlessly! This app lets you
+            visualize graphs, trees, and apply sorting algorithms for a deeper
+            understanding.
+          </div>
+          <button class="button">
+            <div class="button-child" id="button4"></div>
+            <div class="join-today">View More</div>
+          </button>
+        </div>
+        <div class="sortingalgo">
+          <img class="image-16-icon" alt="" src="/static/css/public/image-16@2x.png" />
+
+          <div class="graphstrees-child"></div>
+          <b class="python-app1">Python app</b>
+          <h1 class="infix-to-postfix-container">Sorting Algorithms</h1>
+          <div class="explore-and-sort">
+            Master the art of sorting with this intuitive app! Dive into various
+            sorting algorithms such as Bubble Sort, Selection Sort, and Merge
+            Sort. Visualize each step, compare their efficiency, and enhance
+            your understanding of algorithmic principles. Whether you're a
+            beginner or an algorithm enthusiast, this app provides a hands-on
+            experience to sharpen your sorting skills.
+          </div>
+          <button class="button" id="button5">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+        </div>
+        <div class="more">
+          <div class="more-child"></div>
+          <b class="python-app6">Python app</b>
+          <h1 class="experience-more-python">Experience more Python Apps!</h1>
+          <button class="button6">
+            <div class="button-child"></div>
+            <div class="join-today">View More</div>
+          </button>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-child"></div>
+        <div class="sidebar-item"></div>
+        <h3 class="home" id="home">Home</h3>
+        <h3 class="about-us" id="aboutUs">About Us</h3>
+        <div class="learn-more-about">Learn more about Python apps</div>
+        <h3 class="contacts" id="contacts">Contacts</h3>
+        <img class="logowhite-icon" alt="" src="/static/css/public/logowhite@2x.png" />
+      </div>
+    </div>
+
+    <script>
+      var button = document.getElementById("button");
+      if (button) {
+        button.addEventListener("click", function (e) {
+          window.location.href = "/searchalgo-interface.html";
+        });
+      }
+      
+      var button1 = document.getElementById("button1");
+      if (button1) {
+        button1.addEventListener("click", function (e) {
+          window.location.href = "/Postfix.html";
+        });
+      }
+      
+      var button2 = document.getElementById("button2");
+      if (button2) {
+        button2.addEventListener("click", function (e) {
+          window.location.href = "/QueueDeque.html";
+        });
+      }
+      
+      var button3 = document.getElementById("button3");
+      if (button3) {
+        button3.addEventListener("click", function (e) {
+          window.location.href = "/HashFunc.html";
+        });
+      }
+      
+      var button4 = document.getElementById("button4");
+      if (button4) {
+        button4.addEventListener("click", function (e) {
+          window.location.href = "/graphs.html";
+        });
+      }
+
+      var button5 = document.getElementById("button5");
+      if (button5) {
+        button5.addEventListener("click", function (e) {
+          window.location.href = "/SortingAlgo.html";
+        });
+      }
+
+      var hashFuncContainer = document.getElementById("hashFuncContainer");
+      if (hashFuncContainer) {
+        hashFuncContainer.addEventListener("click", function (e) {
+          window.location.href = "/HashFunc.html";
+        });
+      }
+      
+      var home = document.getElementById("home");
+      if (home) {
+        home.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var aboutUs = document.getElementById("aboutUs");
+      if (aboutUs) {
+        aboutUs.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      
+      var contacts = document.getElementById("contacts");
+      if (contacts) {
+        contacts.addEventListener("click", function (e) {
+          window.location.href = "/MemberPage.html";
+        });
+      }
+      </script>
+  </body>
+</html>
